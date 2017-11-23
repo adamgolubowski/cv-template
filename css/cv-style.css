@@ -1,0 +1,85 @@
+body {
+  background: grey; 
+  font-family: 'Roboto Slab', serif;
+}
+page {
+  background: white;
+  display: block;
+  margin: 1cm auto;
+  margin-bottom: 0.5cm;
+  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+}
+page[size="A4"] {  
+  width: 21cm;
+  height: 29.7cm; 
+}
+page[size="A4"][layout="portrait"] {
+  width: 29.7cm;
+  height: 21cm;  
+}
+
+@media print {
+  body, page {
+    margin: 0;
+    box-shadow: 0;
+  }
+}
+
+#print-space{
+  padding: 2.5cm;
+  position:relative;
+  height: 100%;
+}
+
+#category-header{
+  margin-bottom: 15px;
+  font-weight:bold;
+}
+
+#subtitle{
+  font-weight:lighter;
+  border-bottom: solid;
+  border-width: 1px;
+  height: 26px;
+  margin-bottom: 25px;
+}
+#first-name{
+  font-size:40px;
+  font-weight:bold;
+}
+
+#doc-date{
+  text-align: right;
+}
+
+#contact-data{
+  text-align: right;
+}
+
+#category-details{
+  margin-top: 15px;
+  margin-bottom: 25px;
+  text-align: justify;
+   text-justify: inter-word;
+}
+
+#school-name{
+	text-align: left;
+}
+
+#print-space .footer-note {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding-left: 2.5cm;
+  padding-right: 2.5cm;
+  padding-bottom: 2cm;
+  font-weight:lighter;
+  font-size: 12px;
+  text-align: justify;
+   text-justify: inter-word;
+}
+
+ul {
+  list-style-type: none;
+}
